@@ -13,10 +13,13 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo-link">
-                    <img src="logo.png" alt="MyPart Logo" class="logo-image">
+                    <img src="images/logo.png" alt="MyPart Logo" class="logo-image">
                     <span class="logo-text">MyPart</span>
                 </a>
-                <ul>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
                     <li><a href="#features">Features</a></li>
                     <li><a href="#design">Design</a></li>
                     <li><a href="#use-cases">Applications</a></li>
@@ -38,7 +41,7 @@
         <div class="container">
             <h2>Our Vision</h2>
             <p class="intro-text">To revolutionize remote presence and human–robot collaboration by enabling intelligent, safe, and human-assistive machines that can operate anywhere — from hospitals and airports to offices and factories.</p>
-            <p class="submitted-by">Submitted By: Akhil Radhakrishna Madicherla</p>
+            <p class="submitted-by">By: Akhil Radhakrishna Madicherla</p>
         </div>
     </section>
 
@@ -59,8 +62,16 @@
                     <p>On-board AI / Edge Computing enables real-time decision-making, anomaly detection, guidance, and data processing.</p>
                 </div>
                 <div class="feature-card reveal-on-scroll">
-                    <h3><span class="icon">🔧</span> Customizable Design</h3>
-                    <p>Modular platform allows for the future integration of robotic arms, specialized sensors, or additional hardware based on industry need.</p>
+                    <h3><span class="icon">️</span> Enhanced Safety</h3>
+                    <p>Contactless vitals, fall/distress detection, and IR thermal scanning for predictive maintenance reduce human risk and prevent critical failures.</p>
+                </div>
+                <div class="feature-card reveal-on-scroll">
+                    <h3><span class="icon">💨</span> Environmental Care</h3>
+                    <p>Integrated HEPA+Carbon air purification and optional UV-C disinfection actively improve air quality and hygiene as it patrols.</p>
+                </div>
+                <div class="feature-card reveal-on-scroll">
+                    <h3><span class="icon">🧩</span> Modular & Integrated</h3>
+                    <p>Designed for EMR/EHR integration, with a customizable platform for adding robotic arms, specialized sensors, or other hardware.</p>
                 </div>
             </div>
         </div>
@@ -72,10 +83,10 @@
             <p class="intro-text">A sleek, modern, and non-intimidating design focusing on a large adjustable screen interface and robust autonomous mobility.</p>
             
             <div class="design-gallery">
-                <img src="front.png" alt="MyPart Robot Front View" title="Front View">
-                <img src="Sideview.png" alt="MyPart Robot Side View" title="Side View">
-                <img src="cross.png" alt="MyPart Robot Cross-Sectional View" title="Cross-Sectional View">
-                <img src="back view.png" alt="MyPart Robot Back View" title="Back View">
+                <figure class="img-container"><img src="images/front.png" alt="MyPart Robot Front View" title="Front View"></figure>
+                <figure class="img-container"><img src="images/Sideview.png" alt="MyPart Robot Side View" title="Side View"></figure>
+                <figure class="img-container"><img src="images/cross.png" alt="MyPart Robot Cross-Sectional View" title="Cross-Sectional View"></figure>
+                <figure class="img-container"><img src="images/back view.png" alt="MyPart Robot Back View" title="Back View"></figure>
                 
             </div>
         </div>
@@ -89,21 +100,21 @@
                 <h3>✈️ Airports: Guidance & Digital Check-in</h3>
                 <p>Functions as an autonomous concierge, offering multilingual guidance, real-time maps, and digital assistance like displaying scannable QR codes for boarding passes and check-in details.</p>
                 <div class="image-row">
-                    <img src="Airport.png" alt="Airport Use Case: Boarding Pass Assistance">
-                    <img src="boardingpass.png" alt="Airport Use Case">
+                    <figure class="img-container"><img src="images/Airport.png" alt="Airport Use Case: Boarding Pass Assistance"></figure>
+                    <figure class="img-container"><img src="images/boardingpass.png" alt="Airport Use Case"></figure>
                 </div>
             </div>
             
             <div class="use-case-card reveal-on-scroll">
                 <h3>🏭 Industrial Monitoring & Safety</h3>
                 <p>Mobile supervisor for production lines and restricted zones. It collects sensor data, monitors processes, and provides immediate alerts to remote staff upon detecting anomalies or safety hazards.</p>
-                <img src="Factory.png" alt="Industrial Use Case: Anomaly Detection">
+                <figure class="img-container"><img src="images/Factory.png" alt="Industrial Use Case: Anomaly Detection"></figure>
             </div>
 
             <div class="use-case-card reveal-on-scroll">
                 <h3>🏥 Healthcare: Remote Patient Care</h3>
                 <p>Stores patient data, monitors real-time vitals, alerts staff to critical changes, and enables remote doctor interaction through secure telepresence.</p>
-                <img src="healthcare.png" alt="Healthcare Use Case: Remote Patient Care">
+                <figure class="img-container"><img src="images/healthcare.png" alt="Healthcare Use Case: Remote Patient Care"></figure>
             </div>
             
         </div>
@@ -114,7 +125,7 @@
             <h2>Development Plan & Support Sought</h2>
 
             <div class="plan-grid">
-                <div>
+                <div class="plan-card">
                     <h3>Development Plan</h3>
                     <ul>
                         <li>Phase 1: Hardware prototype (mobility + communication)</li>
@@ -123,13 +134,13 @@
                         <li>Phase 4: Commercial launch across industries</li>
                     </ul>
                 </div>
-                <div>
+                <div class="plan-card">
                     <h3>Support Sought</h3>
                     <p>We are currently seeking partners to launch MyPart:</p>
                     <ul>
                         <li>Funding or Incubation Support to develop the prototype and scale to pilot testing.</li>
                         <li>Mentorship or Partnerships with robotics experts or established organizations.</li>
-                        <li>Collaboration Opportunities with research institutions or tech parks in India.</li>
+                        <li>Collaboration Opportunities with research institutions or tech parks.</li>
                     </ul>
                 </div>
             </div>
@@ -139,50 +150,55 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 MyPart Robotics. All rights reserved.</p>
-            <p class="footer-contact">Designed & Developed by Akhil Radhakrishna Madicherla | <a href="mailto:akhilmadicherla121@gmail.com?subject=Inquiry from MyPart Website">akhilmadicherla121@gmail.com</a></p>
+            <p>&copy; 2025 MyPart Robotics. All rights reserved.</p>
+            <div class="footer-contact">
+                <span>Designed & Developed by Akhil Radhakrishna Madicherla & Sai teja Madicherla</span>
+                <span class="contact-details"><a href="tel:+917981281498">📞 +91 79812 81498</a> | <a href="mailto:akhilmadicherla121@gmail.com?subject=Inquiry from MyPart Website">✉️ akhilmadicherla121@gmail.com</a></span>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Typing effect for hero headline
-        const headlineText = "MyPart: Next-Generation Autonomous Telepresence Robot";
-        const headlineElement = document.getElementById('hero-headline');
-        let i = 0;
-
-        function typeWriter() {
-            if (i < headlineText.length) {
-                headlineElement.innerHTML += headlineText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50); // Adjust typing speed here
-            } else {
-                headlineElement.classList.add('typing-done'); // Add class to remove cursor
-            }
-        }
-
-        // Start typing animation when the page loads
-        document.addEventListener('DOMContentLoaded', typeWriter);
-    </script>
-
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Stop observing once it's visible
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Typing Effect ---
+            const headlineText = "MyPart: Next-Generation Autonomous Telepresence Robot";
+            const headlineElement = document.getElementById('hero-headline');
+            if (headlineElement) {
+                let i = 0;
+                function typeWriter() {
+                    if (i < headlineText.length) {
+                        headlineElement.innerHTML += headlineText.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 50); // Adjust typing speed
+                    } else {
+                        headlineElement.classList.add('typing-done');
+                    }
                 }
+                typeWriter();
+            }
+    
+            // --- Scroll Reveal Animation ---
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+    
+            document.querySelectorAll('.reveal-on-scroll').forEach((el) => observer.observe(el));
+    
+            // --- Mobile Navigation Toggle ---
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('visible');
+                navToggle.classList.toggle('active');
             });
-        }, {
-            threshold: 0.1 // Trigger when 10% of the element is visible
         });
-
-        const elementsToReveal = document.querySelectorAll('.reveal-on-scroll');
-        elementsToReveal.forEach((el) => observer.observe(el));
     </script>
 
 </body>
 
 </html>
-
-
-
